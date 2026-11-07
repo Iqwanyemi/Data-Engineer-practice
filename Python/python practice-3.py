@@ -32,7 +32,15 @@ for i in lis:
   if i not in uniq:
     uniq.append(i)
 print(uniq) 
+(or)
+from collections import Counter
+lis =[1,2,2,3,3]
+dup = []
 
+for k, v in Counter(lis).items():
+    if v > 1:
+        dup.append(k)
+print(dup)
 
 5️⃣ Lambda function to square numbers in a list  
 python
