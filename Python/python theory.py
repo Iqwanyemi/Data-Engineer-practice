@@ -14,7 +14,14 @@ Module = single .py file. Package = collection of modules organized in a directo
 7. what is args and kwargs?
 
 1)What is the difference between List, Set and Dictionary?
+==========================================================
 2)What is List Comprehension?
+List comprehension is a short and efficient way to create a new list in Python using a single line of code.
+[expression for item in iterable if condition]
+numbers = [x * 2 for x in range(5)]
+
+print(numbers)
+==============================================
 3)What is Lambda Function?
 4) difference between append() and extend() with example
 5)What is Exception Handling?
@@ -22,8 +29,20 @@ Module = single .py file. Package = collection of modules organized in a directo
 7)What is the difference between Shallow Copy and Deep Copy?
 8)What is type casting in Python?
 9)What is an iterator? and What is a generator function
+10) write a code for handling retires using python
+import time
 
+for i in range(3):
+    try:
+        print("Attempt:", i + 1)
+        result = 10 / 0
+        print("Success")
+        break
 
+    except Exception:
+        print("Failed, retrying...")
+        time.sleep(2)
+      ============================================
 coding 
 1) Reverse a string
 ========================================
