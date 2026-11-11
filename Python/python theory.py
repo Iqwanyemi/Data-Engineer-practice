@@ -5,7 +5,13 @@ Shallow copy copies only the outer object, while deep copy copies the object and
 3. what is decorator,iterator and generator?
 decorator-A function that modifies another function's behavior without changing its code.
   Iterator is an object that implements __iter__() and __next__() methods.
+  An iterator is an object used to access elements one by one.
+It implements __iter__() and __next__().
+Uses iter() and next() functions.
   A special function that uses yield.Instead of storing all values in memory:it generates values one by one.
+A generator is a special type of iterator.
+Uses the yield keyword instead of return.
+Generates values one at a time, saving memory.
 4. diff b/w set,tuple,list and dict?
 
 5.what is py packages and py modules?
