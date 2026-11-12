@@ -89,4 +89,8 @@ with DAG(
         python_callable=run_job
     )
   ===============================================
-5.
+5.Interview Answer: How to Run DAG2 After DAG1 in Airflow?
+We can use TriggerDagRunOperator to trigger DAG2 after DAG1 completes successfully.
+    Interview Answer: "In Cloud Composer, I use TriggerDagRunOperator to trigger
+    the second DAG after the first DAG's tasks complete successfully. Alternatively, I can use ExternalTaskSensor when DAG2 needs to wait for DAG1."
+
